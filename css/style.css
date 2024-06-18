@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #f0f0f0;
-  color: #000;
+  color: #101010;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -18,9 +18,15 @@ body {
   margin: 0 auto;
 }
 .fade{
-  transition: 1s ease;
+  transition: 2s ease;
+  transform: translateY(40px);
+  opacity: 0;
 }
-
+.fade.active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s ease;
+}
 a {
   font-size: 0.875rem;
 }
@@ -49,7 +55,7 @@ img {
   content: "";
   width: 40px;
   height: 1px;
-  background-color: #000;
+  background-color: #101010;
   display: block;
 }
 
@@ -70,9 +76,14 @@ img {
 /* header */
 .header {
   height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+   */
 }
 
 .header .inner {
@@ -94,7 +105,7 @@ img {
   width: 200px;
   height: 80px;
   line-height: 80px;
-  background-color: #000;
+  background-color: #101010;
   color: #fff;
   font-size: 0.75rem;
   display: inline-block;
@@ -126,7 +137,7 @@ img {
 
 .news .list li {
   width: calc(100%/3);
-  border-right: solid 1px #000;
+  border-right: solid 1px #101010;
   padding: 10px 20px;
 }
 
@@ -146,7 +157,7 @@ img {
   width: 50px;
   height: 20px;
   line-height: 20px;
-  background-color: #000;
+  background-color: #101010;
   color: #fff;
   font-size: 0.75rem;
   text-align: center;
@@ -207,7 +218,7 @@ img {
   content: "";
   width: 8px;
   height: 1px;
-  background-color: #000;
+  background-color: #101010;
   position: absolute;
   top: 50%;
   left: -18px;
